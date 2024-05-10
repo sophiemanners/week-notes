@@ -28,17 +28,21 @@
   display: inline-block;
   font-size: 18px;
   margin-top: 1.25rem;
-  padding: 1px 0 3px;
+  padding: 10px 15px 10px 15px;
   text-align: center;
   text-decoration: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+  position: static;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
   &:hover {
     text-decoration: none;
   }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 320px) {
   .footer-bottom {
     padding-right: 60px;
     position: relative;
@@ -48,8 +52,9 @@
     margin: 0;
     position: absolute;
     right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    //top: 87%;
+    //-webkit-transform: translateY(-87%);
+    //transform: translateY(-87%);
+    margin-top: 10px;
   }
 }

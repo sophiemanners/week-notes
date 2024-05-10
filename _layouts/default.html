@@ -23,6 +23,8 @@
 <body class="lang-{{page.lang}}">
   <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
+  <a href="#maincontent" class="skipNavigationLink" id="skipNavigationLink">{{ site.t[page.lang].skip}}</a>
+
   <header class="app-top-bar">
     {% if page.url == "/" %}
     <h3 class="app-title site-title">{{site.t[page.lang].title}}</h3>
@@ -36,8 +38,8 @@
     {% include language-switcher.html pages=site.pages %}
     {% endif %}
 
-    <input type="checkbox" id="tm" class="app-menu__checkbox">
-		<label for="tm" class="tm app-menu__toggle"><span>Menu</span></label>
+    <input type="checkbox" id="tm" class="app-menu__checkbox" aria-label="{{ site.t[page.lang].openmenu]}}">
+		<label for="tm" class="tm app-menu__toggle"><span>{{ site.t[page.lang].menu | capitalize }}</span></label>
     <nav class="app-nav">
       <ul class="app-menu">
         {% for item in site.navigation %}
@@ -48,11 +50,12 @@
         <li class="app-menu-item {{ current }}">
           <a class="{{ current }}" href="{{ site.t[page.lang].root }}{{ item.url }}">{{ item[page.lang] | capitalize }}</a>
         </li>
-        {% endfor %}
+        {% endfor %}        
       </ul><!-- .menu -->
     </nav>
     
   </header>
+  <main id="maincontent"></main>
   {{ content }}
 
 </body>

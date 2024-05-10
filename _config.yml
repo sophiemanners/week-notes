@@ -32,18 +32,18 @@ navigation:
     url: /updates/
 
 # Colours
-theme_color: '#326A85'
+theme_color: '#008393'
 accent_color: '#326A85'
 text_color: '#0A0908'
 secondary_text_color: '#20201D'
-link_color: '#3E81A3'
+link_color: '#007485'
 background_color: '#fbfbfb'
 page_color: '#ffffff'
 border_color: '#d7d7d7'
 
 t:
   en:
-    title: NRW week notes
+    title: Natural Resources Wales week notes
     description: "Describe your site"
     language: English
     root: /week-notes/en
@@ -51,8 +51,16 @@ t:
     team: team
     by: by
     share: share
+    top : top
+    toptext: go to the top of the page
+    contact : contact us
+    nrw : NRW
+    power : powered by
+    menu: menu
+    skip: Skip To Main Content
+    openmenu: open menu
   cy:
-    title: CNC nodiadau wythnos
+    title: Cyfoeth Naturiol Cymru nodiadau wythnos
     description: "Disgrifiwch eich gwefan"
     language: Cymraeg
     root: /week-notes/cy
@@ -60,4 +68,11 @@ t:
     team: tîm
     by: gan
     share: rhannu
-
+    top : i fyny
+    toptext: ewch i frig y dudalen
+    contact : cysylltu â ni
+    nrw : CNC
+    power : wedi ei bweru gan
+    menu: bwydlen
+    skip: Sgipio I’r Prif Gynnwys
+    openmenu: dewislen agored
